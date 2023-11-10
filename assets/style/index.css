@@ -3,6 +3,33 @@
 @import url(./reset.css);
 
 .container {
-    width: min(100% - 30px, 1200px);
+    width: min(100% - 30px, 1080px);
     margin-inline: auto;
+}
+
+/* --------------------Header style----------------------- */
+/* ------------------------------------------------------- */
+
+header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+header h1 {
+    color: #f6f6ff;
+    font-size: 30px;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header a {
+    color: #f6f6ff;
+    font-size: 18px;
 }
