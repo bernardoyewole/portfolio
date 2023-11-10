@@ -71,7 +71,6 @@ header ul a:not(.contact):hover {
 
 .hero-banner h2:first-child {
     color: #59dfcd;
-    padding-bottom: 15px;
     font-size: 17px;
 }
 
@@ -101,3 +100,104 @@ header ul a:not(.contact):hover {
 .read-more:hover {
     background-color: #26c5b0
 }
+
+.about-me h2 {
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.about-me h2 span {
+    color: #26c5b0;
+}
+
+.about-me-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-me-content p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.about-me-content p + p {
+    padding-top: 25px;
+}
+
+.about-me-content span {
+    color: #26c5b0;
+}
+
+.about-me img {
+    border-radius: 6px;
+}
+
+.projects h2 {
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+.proj-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+}
+
+.proj-one h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+
+}
+.proj-one img {
+    height: 400px;
+    width: 345px;
+}
+
+.proj-one-descrip div {
+    background-color: #484a53;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.proj-one-descrip p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.language {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.language li {
+    color: #fff;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.3s ease-out;
+}
+
+.links a:hover {
+    color: #26c5b0;
+}
+
+
