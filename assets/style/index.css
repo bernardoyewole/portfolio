@@ -7,11 +7,11 @@
     margin-inline: auto;
 }
 
-/* --------------------Header style----------------------- */
+/* ------------------Header + Main style------------------ */
 /* ------------------------------------------------------- */
 
 .section-one {
-    height: 100%;
+    height: 100dvh;
 }
 
 .header-herobanner {
@@ -250,6 +250,7 @@ header ul a:not(.contact):hover {
     display: grid;
     place-items: center;
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .get-in-touch p {
@@ -265,7 +266,47 @@ header ul a:not(.contact):hover {
     gap: 20px;
 }
 
-.get-in-touch ul i {
+.get-in-touch ul a {
     color: #fff;
     font-size: 30px;
+    transition: all 0.3s ease-out;
+}
+
+/* ---------------------Footer style---------------------- */
+/* ------------------------------------------------------- */
+
+.line-break {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line-one, .line-two {
+    border: 1px solid #fff;
+    height: 1px;
+    width: 490px;
+}
+
+.footer-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+
+.footer-links a:hover {
+    color: #26c5b0;
+}
+
+.footer-links a {
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.3s ease-out;
+}
+
+.footer-links p {
+    text-align: center;
+    color: #484a53;
+    padding-bottom: 20px;
 }
