@@ -106,7 +106,7 @@ header ul a:not(.contact):hover {
     font-size: 70px;
     text-align: center;
     font-weight: 600;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .about-me h2 span {
@@ -142,34 +142,38 @@ header ul a:not(.contact):hover {
     text-align: center;
     font-weight: 600;
     padding-top: 120px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
-.proj-one {
+.project-display {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 200px;
 }
 
-.proj-one h3 {
+.project-display + .project-display {
+    padding-top: 120px;
+}
+
+.project-display h3 {
     color: #fff;
     font-size: 30px;
     font-weight: 600;
     padding-bottom: 20px;
 
 }
-.proj-one img {
+.project-display img {
     height: 400px;
     width: 345px;
+    border-radius: 6px;
 }
 
-.proj-one-descrip div {
+.project-display-descrip div {
     background-color: #484a53;
     padding: 20px;
     border-radius: 6px;
 }
 
-.proj-one-descrip p {
+.project-display-descrip p {
     color: #fff;
     font-size: 18px;
 }
@@ -185,12 +189,12 @@ header ul a:not(.contact):hover {
     color: #fff;
 }
 
-.links {
+.project-display .links {
     display: flex;
     gap: 30px;
 }
 
-.links a {
+.project-display .links a {
     color: #fff;
     font-size: 30px;
     transition: all 0.3s ease-out;
@@ -200,4 +204,48 @@ header ul a:not(.contact):hover {
     color: #26c5b0;
 }
 
+.other-projects h3 {
+    color: #26c5b0;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 120px;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
 
+.other-proj-display {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.other-proj {
+    background-color: #1a1d28;
+    padding: 20px;
+    border-radius: 4px;
+    width: calc(50% - 30px);
+}
+
+.other-proj h4 {
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.other-proj p {
+    color: #fff;
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+
+.other-proj .links {
+    display: flex;
+    gap: 30px;
+}
+
+.other-proj a {
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.3s ease-out;
+}
