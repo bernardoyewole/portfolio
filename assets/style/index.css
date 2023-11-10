@@ -101,6 +101,10 @@ header ul a:not(.contact):hover {
     background-color: #26c5b0
 }
 
+.about-me {
+    padding-bottom: 120px;
+}
+
 .about-me h2, .projects h2, .get-in-touch h2 {
     color: #fff;
     font-size: 70px;
@@ -136,14 +140,10 @@ header ul a:not(.contact):hover {
     border-radius: 6px;
 }
 
-.projects h2 {
-    padding-top: 120px;
-}
-
 .project-display {
     display: flex;
     justify-content: space-between;
-    gap: 200px;
+    gap: 50px;
 }
 
 .project-display + .project-display {
