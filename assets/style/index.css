@@ -10,6 +10,14 @@
 /* --------------------Header style----------------------- */
 /* ------------------------------------------------------- */
 
+.section-one {
+    height: 100%;
+}
+
+.header-herobanner {
+    height: 100%;
+}
+
 header {
     padding-top: 20px;
     display: flex;
@@ -18,7 +26,7 @@ header {
     align-items: center;
 }
 
-header h1 {
+header h1 a {
     color: #f6f6ff;
     font-size: 30px;
 }
@@ -29,7 +37,67 @@ header ul {
     align-items: center;
 }
 
-header a {
-    color: #f6f6ff;
+header ul a:not(.contact) {
+    color: #fff;
     font-size: 18px;
+    transition: all 0.3s ease-out;
+}
+
+header ul a:not(.contact):hover {
+    color: #59dfcd;
+}
+
+.contact {
+    color: #59dfcd;
+    font-size: 18px;
+    border: 1px solid #59dfcd;
+    padding: 4px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease-out;
+}
+
+.contact:hover {
+    border: 1px solid #ededed;
+}
+
+.hero-banner {
+    height: calc(100% - 80px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-banner h2:first-child {
+    color: #59dfcd;
+    padding-bottom: 15px;
+    font-size: 17px;
+}
+
+.hero-banner h2:not(:first-child) {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.hero-banner p {
+    color: #fff;
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+.read-more {
+    color: #262626;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #59dfcd;
+    transition: all 0.3s ease-out;
+}
+
+.read-more:hover {
+    background-color: #26c5b0
 }
