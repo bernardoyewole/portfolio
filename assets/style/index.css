@@ -86,22 +86,22 @@ header ul a:not(.contact):hover {
     font-size: 18px;
 }
 
-.read-more {
+.read-more, .message {
     color: #262626;
     font-size: 18px;
     font-weight: 500;
     margin-top: 30px;
-    padding: 10px 20px;
+    padding: 12px 30px;
     border-radius: 4px;
     background-color: #59dfcd;
     transition: all 0.3s ease-out;
 }
 
-.read-more:hover {
+.read-more:hover, .message:hover {
     background-color: #26c5b0
 }
 
-.about-me h2 {
+.about-me h2, .projects h2, .get-in-touch h2 {
     color: #fff;
     font-size: 70px;
     text-align: center;
@@ -128,7 +128,7 @@ header ul a:not(.contact):hover {
     padding-top: 25px;
 }
 
-.about-me-content span {
+.about-me-content span, .get-in-touch span {
     color: #26c5b0;
 }
 
@@ -137,13 +137,9 @@ header ul a:not(.contact):hover {
 }
 
 .projects h2 {
-    color: #fff;
-    font-size: 70px;
-    text-align: center;
-    font-weight: 600;
     padding-top: 120px;
-    padding-bottom: 40px;
 }
+
 .project-display {
     display: flex;
     justify-content: space-between;
@@ -151,7 +147,7 @@ header ul a:not(.contact):hover {
 }
 
 .project-display + .project-display {
-    padding-top: 120px;
+    padding-top: 80px;
 }
 
 .project-display h3 {
@@ -208,7 +204,7 @@ header ul a:not(.contact):hover {
     color: #26c5b0;
     font-size: 24px;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 80px;
     font-weight: 500;
     padding-bottom: 40px;
 }
@@ -248,4 +244,28 @@ header ul a:not(.contact):hover {
     color: #fff;
     font-size: 30px;
     transition: all 0.3s ease-out;
+}
+
+.get-in-touch {
+    display: grid;
+    place-items: center;
+    padding-top: 120px;
+}
+
+.get-in-touch p {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.get-in-touch ul {
+    display: flex;
+    gap: 20px;
+}
+
+.get-in-touch ul i {
+    color: #fff;
+    font-size: 30px;
 }
