@@ -166,6 +166,7 @@ header ul a:not(.contact):hover {
     padding-bottom: 20px;
 
 }
+
 .project-display img {
     height: 400px;
     width: 345px;
@@ -321,10 +322,6 @@ header ul a:not(.contact):hover {
     color: #484a53;
     padding-bottom: 20px;
 }
-
-/* #about, #projects, #contact-me {
-    scroll-behavior: smooth;
-} */
 
 /*--------------------- Media Queries----------------------*/
 /* ------------------------------------------------------- */
