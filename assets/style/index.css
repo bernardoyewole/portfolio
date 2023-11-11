@@ -199,14 +199,16 @@ header ul a:not(.contact):hover {
     gap: 30px;
 }
 
-.project-display .links a {
+.project-display .links i {
     color: #fff;
-    font-size: 30px;
+    font-size: 35px;
     transition: all 0.3s ease-out;
 }
 
-.links a:hover {
+.links i:hover {
     color: #26c5b0;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
 }
 
 .other-projects h3 {
@@ -251,7 +253,7 @@ header ul a:not(.contact):hover {
 
 .other-proj a {
     color: #fff;
-    font-size: 30px;
+    font-size: 35px;
     transition: all 0.3s ease-out;
 }
 
@@ -319,6 +321,10 @@ header ul a:not(.contact):hover {
     color: #484a53;
     padding-bottom: 20px;
 }
+
+/* #about, #projects, #contact-me {
+    scroll-behavior: smooth;
+} */
 
 /*--------------------- Media Queries----------------------*/
 /* ------------------------------------------------------- */
