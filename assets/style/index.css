@@ -54,6 +54,15 @@ header ul a:not(.contact):hover {
     padding: 4px 10px;
     border-radius: 4px;
     transition: all 0.3s ease-out;
+    position: relative;
+}
+
+.contact::after {
+    position: absolute;
+    content: url(../img/menu.png);
+    visibility: hidden;
+    left: 0px;
+    top: 4px;
 }
 
 .contact:hover {
@@ -309,4 +318,73 @@ header ul a:not(.contact):hover {
     text-align: center;
     color: #484a53;
     padding-bottom: 20px;
+}
+
+/*--------------------- Media Queries----------------------*/
+/* ------------------------------------------------------- */
+ 
+@media screen and (max-width: 840px) {
+    .hero-banner h2:not(:first-child) {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 806px) {
+    .other-proj-display {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .other-proj {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 774px) {
+    .project-display {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .project-display + .project-display {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 733px) {
+    .about-me-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .section-one {
+        height: calc(100dvh - 100px);
+    }
+}
+
+@media only screen and (max-width: 628px) {
+    .hero-banner h2:not(:first-child) {
+        font-size: 40px;
+    }
+    header ul li {
+        visibility: hidden;
+    }
+    .contact::after {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about-me img {
+        width: 100%;
+        height: 550px;
+    }
+    .project-display img {
+        width: 100%;
+        height: 500px;
+    }
 }
