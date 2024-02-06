@@ -85,7 +85,7 @@ header ul a:not(.contact):hover {
 
 .hero-banner h2:not(:first-child) {
     color: #fff;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 500;
 }
 
@@ -116,7 +116,7 @@ header ul a:not(.contact):hover {
 
 .about-me h2, .projects h2, .get-in-touch h2 {
     color: #fff;
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     font-weight: 600;
     padding-bottom: 40px;
@@ -149,6 +149,21 @@ header ul a:not(.contact):hover {
     border-radius: 6px;
 }
 
+.other-technologies {
+    color: #fff;
+    padding-top: 10px;
+}
+
+.other-technologies li {
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 18px
+}
+
+.other-technologies li + li {
+    padding-top: 10px;
+}
+
 .project-display {
     display: flex;
     justify-content: space-between;
@@ -161,7 +176,7 @@ header ul a:not(.contact):hover {
 
 .project-display h3 {
     color: #fff;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
     padding-bottom: 20px;
 
@@ -326,7 +341,7 @@ header ul a:not(.contact):hover {
 /*--------------------- Media Queries----------------------*/
 /* ------------------------------------------------------- */
  
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1080px) {
     .hero-banner h2:not(:first-child) {
         font-size: 60px;
     }
