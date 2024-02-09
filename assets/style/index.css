@@ -3,7 +3,7 @@
 @import url(./reset.css);
 
 .container {
-    width: min(100% - 30px, 1080px);
+    width: min(100% - 30px, 1180px);
     margin-inline: auto;
 }
 
@@ -40,7 +40,7 @@ header ul {
 header ul a:not(.contact) {
     color: #fff;
     font-size: 18px;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
 }
 
 header ul a:not(.contact):hover {
@@ -53,7 +53,7 @@ header ul a:not(.contact):hover {
     border: 1px solid #59dfcd;
     padding: 4px 10px;
     border-radius: 4px;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
     position: relative;
 }
 
@@ -103,7 +103,7 @@ header ul a:not(.contact):hover {
     padding: 12px 30px;
     border-radius: 4px;
     background-color: #59dfcd;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .read-more:hover, .message:hover {
@@ -167,11 +167,12 @@ header ul a:not(.contact):hover {
 .project-display {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    align-items: center;
+    gap: 80px;
 }
 
 .project-display + .project-display {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .project-display h3 {
@@ -179,24 +180,29 @@ header ul a:not(.contact):hover {
     font-size: 26px;
     font-weight: 600;
     padding-bottom: 20px;
-
 }
 
-.project-display img {
-    height: 400px;
-    width: 345px;
+.img-one {
+    height: 380px;
+    width: 420px;
+    border-radius: 6px;
+}
+
+.img-two {
+    height: 320px;
+    width: 630px;
     border-radius: 6px;
 }
 
 .project-display-descrip div {
-    background-color: #484a53;
+    background-color: #141f38;
     padding: 20px;
     border-radius: 6px;
 }
 
 .project-display-descrip p {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .language {
@@ -212,18 +218,25 @@ header ul a:not(.contact):hover {
 
 .project-display .links {
     display: flex;
-    gap: 30px;
+    gap: 26px;
+    align-items: center;
 }
 
-.project-display .links i {
+.project-display .links i:not(.fa-github) {
     color: #fff;
-    font-size: 35px;
-    transition: all 0.3s ease-out;
+    font-size: 28px;
+    transition: all 0.3s ease-in-out;
 }
 
-.links i:hover {
+.fa-github {
+    font-size: 30px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.links i:not(.fa-github):hover,
+.fa-github:hover {
     color: #26c5b0;
-    transform: scale(1.2);
     transition: all 0.3s ease-in-out;
 }
 
@@ -231,46 +244,65 @@ header ul a:not(.contact):hover {
     color: #26c5b0;
     font-size: 24px;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 100px;
     font-weight: 500;
     padding-bottom: 40px;
 }
 
 .other-proj-display {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    gap: 20px;
 }
 
-.other-proj {
-    background-color: #1a1d28;
+.other-proj-display + .other-proj-display {
+    padding-top: 40px;
+}
+
+.other-proj-display span {
+    color: #26c5b0;
+}
+
+.other-proj-display div {
+    background-color: #141f38;
+    border-radius: 3px;
+    flex: 1;
+}
+
+.other-proj-display img {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.other-proj-info {
+    color: #fff;
     padding: 20px;
-    border-radius: 4px;
-    width: calc(50% - 30px);
 }
 
-.other-proj h4 {
-    color: #fff;
-    font-size: 22px;
-    padding-bottom: 20px;
-    font-weight: 500;
+.other-proj-info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
 }
 
-.other-proj p {
-    color: #fff;
-    font-size: 17px;
-    padding-bottom: 30px;
+.other-proj-info p {
+    font-size: 14px;
+    padding-bottom: 10px;
 }
 
-.other-proj .links {
+.other-proj-info .links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    align-items: center;
 }
 
-.other-proj a {
+.other-proj-info a {
     color: #fff;
-    font-size: 35px;
-    transition: all 0.3s ease-out;
+    font-size: 28px;
+    transition: all 0.3s ease-in-out;
+}
+
+.other-proj-info a:hover {
+    color: #26c5b0;
 }
 
 .get-in-touch {
@@ -296,7 +328,7 @@ header ul a:not(.contact):hover {
 .get-in-touch ul a {
     color: #fff;
     font-size: 30px;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
 }
 
 /* ---------------------Footer style---------------------- */
@@ -329,7 +361,7 @@ header ul a:not(.contact):hover {
 .footer-links a {
     color: #fff;
     font-size: 30px;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .footer-links p {
@@ -340,14 +372,43 @@ header ul a:not(.contact):hover {
 
 /*--------------------- Media Queries----------------------*/
 /* ------------------------------------------------------- */
- 
+@media only screen and (max-width: 1211px) {
+    .img-two {
+        height: 300px;
+        width: 610px;
+        border-radius: 6px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .img-two {
+        height: 280px;
+        width: 580px;
+        border-radius: 6px;
+    }
+}
+
 @media screen and (max-width: 1080px) {
     .hero-banner h2:not(:first-child) {
         font-size: 60px;
     }
 }
 
-@media only screen and (max-width: 806px) {
+@media only screen and (max-width: 1045px) {
+    .img-two {
+        height: 260px;
+        width: 560px;
+        border-radius: 6px;
+    }
+}
+
+@media only screen and (max-width: 969px) {
+    .project-display {
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
     .other-proj-display {
         display: flex;
         align-items: center;
@@ -356,6 +417,27 @@ header ul a:not(.contact):hover {
     }
     .other-proj {
         width: 100%;
+    }
+    .img-two {
+        height: 240px;
+        width: 540px;
+        border-radius: 6px;
+    }
+}
+
+@media only screen and (max-width: 857px) {
+    .img-two {
+        height: 220px;
+        width: 530px;
+        border-radius: 6px;
+    }
+}
+
+@media only screen and (max-width: 814px) {
+    .img-two {
+        height: 200px;
+        width: 500px;
+        border-radius: 6px;
     }
 }
 
@@ -368,6 +450,11 @@ header ul a:not(.contact):hover {
     }
     .project-display + .project-display {
         flex-direction: column-reverse;
+    }
+    .img-two {
+        height: 320px;
+        width: 630px;
+        border-radius: 6px;
     }
 }
 
@@ -388,8 +475,14 @@ header ul a:not(.contact):hover {
     .hero-banner h2:not(:first-child) {
         font-size: 40px;
     }
+    header ul {
+        gap: 0px;
+    }
     header ul li {
         visibility: hidden;
+    }
+    .contact {
+        font-size: 16px;
     }
     .contact::after {
         visibility: visible;
