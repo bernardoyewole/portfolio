@@ -161,6 +161,10 @@ header ul a:not(.contact):hover {
     align-items: center;
 }
 
+.image-box {
+    width: 80%;
+}
+
 .about-me-content p {
     color: #fff;
     font-size: 18px;
@@ -179,18 +183,20 @@ header ul a:not(.contact):hover {
     border-radius: 6px;
 }
 
-.other-technologies {
+.technologies-box {
     color: #fff;
     padding-top: 10px;
+    display: flex;
+    gap: 140px;
 }
 
-.other-technologies li {
+.technologies li {
     list-style: disc;
     list-style-position: inside;
     font-size: 18px
 }
 
-.other-technologies li+li {
+.technologies li+li {
     padding-top: 10px;
 }
 
@@ -427,6 +433,10 @@ img {
     .hero-banner h2:not(:first-child) {
         font-size: 60px;
     }
+
+    .image-box {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1045px) {
@@ -519,8 +529,12 @@ img {
         gap: 0px;
     }
 
-    header ul li {
+    .contact {
         visibility: hidden;
+    }
+
+    header ul li:not(header ul li:last-child) {
+        display: none;
     }
 
     .contact {
@@ -530,18 +544,27 @@ img {
 
     .contact::after {
         visibility: visible;
-
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .about-me img {
-        width: 100%;
-        height: 550px;
-    }
-
     .project-display .img-two {
         height: 240px;
         width: 630px;
+    }
+
+    .about-me-content div {
+        width: 100%;
+    }
+
+    .about-me-content p, 
+    .project-display-descrip p,
+    .about-me-content li {
+        font-size: 16px;
+    }
+
+    .technologies-box {
+        flex-direction: column;
+        gap: 10px;
     }
 }
