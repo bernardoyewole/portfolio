@@ -82,16 +82,20 @@ header ul a:not(.contact):hover {
     position: relative;
 }
 
-.contact::after {
-    position: absolute;
-    content: url(../img/menu.png);
-    visibility: hidden;
-    left: 0px;
-    top: 4px;
-}
-
 .contact:hover {
     border: 1px solid #ededed;
+}
+
+.fa-solid.fa-bars {
+    font-size: 25px;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.hamburger-menu {
+    display: none !important;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .hero-banner {
@@ -526,30 +530,50 @@ img {
     }
 
     header ul {
-        gap: 0px;
+        gap: 20px;
     }
 
-    .contact {
-        visibility: hidden;
-    }
-
-    header ul li:not(header ul li:last-child) {
+    header ul li {
         display: none;
     }
-
-    .contact {
-        font-size: 16px;
-        padding: 4px 0px;
+    
+    .hamburger-menu {
+        display: block !important;
     }
 
-    .contact::after {
-        visibility: visible;
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav li {
+        display: inline;
+    }
+
+    .nav {
+        border-bottom-left-radius: 6px;
+        position: fixed;
+        right: -250px;
+        width: 250px;
+        padding: 240px 20px 20px 20px;
+        align-items: center;
+        text-align: center;
+        background: #202f52;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .nav.active {
+        /* top: 0; */
+        right: 0;
+    }
+
+    .contact {
+        line-height: 2;
     }
 }
 
 @media only screen and (max-width: 500px) {
     .project-display .img-two {
-        height: 240px;
+        height: 200px;
         width: 630px;
     }
 
