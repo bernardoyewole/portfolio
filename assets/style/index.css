@@ -227,8 +227,8 @@ img {
 }
 
 .img-one {
-    height: 380px;
-    width: 420px;
+    height: 340px;
+    width: 620px;
     border-radius: 6px;
 }
 
@@ -246,7 +246,7 @@ img {
 
 .project-display-descrip p {
     color: #fff;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .language {
