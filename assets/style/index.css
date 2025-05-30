@@ -222,6 +222,10 @@ header ul a:not(.contact):hover {
     padding-bottom: 20px;
 }
 
+.project-display > a {
+    width: 100%;
+}
+
 img {
     transition: all 0.25s ease-out;
 }
@@ -573,6 +577,11 @@ img {
 
 @media only screen and (max-width: 500px) {
     .project-display .img-two {
+        height: 200px;
+        width: 630px;
+    }
+
+    .project-display .img-one {
         height: 200px;
         width: 630px;
     }
